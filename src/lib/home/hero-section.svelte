@@ -21,7 +21,10 @@
 	});
 </script>
 
-<section id="hero" class="relative w-full h-[100vh] md:pl-[160px] flex flex-col justify-center">
+<section
+	id="hero"
+	class="relative w-full h-[100vh] md:pl-[160px] flex flex-col justify-center bg-[url('/hero-bg.jpg')] bg-cover before:content-[''] before:bg-white/80 before:absolute before:bottom-0 before:top-0 before:left-0 before:right-0"
+>
 	<div class="container mx-auto text-[#45505b]" data-aos="zoom-in" data-aos-delay="100">
 		<h1 class="m-0 text-[64px] font-bold leading-[56px]">Brandon Johnson</h1>
 		<p class="mt-[15px] text-[26px]">
