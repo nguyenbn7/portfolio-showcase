@@ -18,10 +18,11 @@ h6 {
 }
 
 @layer base {
-  .row {
+  /* .row {
     @apply flex flex-wrap mt-[calc(-1*0)] mx-[cal(-.5*1.5rem)];
   }
   .row > * {
     @apply flex-shrink-0 max-w-full px-[calc(1.5rem*.5)] mt-0;
-  }
+  } */
+
 }

@@ -37,12 +37,11 @@
 				<li class="relative">
 					<a
 						href="#{link.sectionId}"
-						class="flex items-center py-[10px] px-[18px] mb-[8px] text-[#45505b] hover:text-white bg-[#f2f3f5] hover:bg-[#0563bb] rounded-[50px] h-[56px] overflow-hidden duration-300 group"
+						class="group/item w-[56px] hover:w-full flex items-center py-[10px] px-[18px] mb-[8px] text-[#45505b] hover:text-white bg-[#f2f3f5] hover:bg-[#0563bb] rounded-[50px] h-[56px] overflow-hidden duration-300"
 						title={link.name}
-						><span class="text-[17px] group-hover:mr-3 size-[20px] text-center"
-							><i class={link.faIcon}></i></span
-						>
-						<span class="hidden group-hover:inline-block text-white text-[15px]">{link.name}</span
+						><span class="size-[20px] text-[17px] text-center"><i class={link.faIcon}></i></span>
+						<span class="hidden group-hover/item:block ml-[7px] mr-[5px] text-[15px]"
+							>{link.name}</span
 						></a
 					>
 				</li>
