@@ -1,4 +1,5 @@
 <script>
+	import AboutSection from '$lib/home/about-section.svelte';
 	import HeroSection from '$lib/home/hero-section.svelte';
 </script>
 
@@ -7,3 +8,4 @@
 </svelte:head>
 
 <HeroSection />
+<AboutSection />

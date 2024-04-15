@@ -18,11 +18,35 @@ h6 {
 }
 
 @layer base {
-  /* .row {
+  .row {
     @apply flex flex-wrap mt-[calc(-1*0)] mx-[cal(-.5*1.5rem)];
   }
   .row > * {
     @apply flex-shrink-0 max-w-full px-[calc(1.5rem*.5)] mt-0;
-  } */
+  }
+
+  section {
+    @apply p-[60px] overflow-hidden;
+  }
+
+  .section-title {
+    @apply text-center pb-[30px]
+  }
+
+  .section-title h2 {
+    @apply relative mb-[20px] pb-[20px] text-[32px] font-bold uppercase text-[#45505b];
+  }
+
+  .section-title h2::before {
+    @apply content-[''] absolute block w-[120px] h-[1px] bg-[#ddd] bottom-[1px] left-[calc(50%-60px)]
+  }
+
+  .section-title h2::after {
+    @apply content-[''] absolute block w-[40px] h-[3px] bg-[#0563bb] bottom-0 left-[calc(50%-20px)];
+  }
+
+  .section-title p {
+    @apply mb-0
+  }
 
 }
