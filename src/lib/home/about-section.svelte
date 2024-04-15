@@ -13,7 +13,7 @@
 			<div class="md:w-1/3 px-3">
 				<img src="/profile-img.jpg" class="max-w-full h-auto" alt="" />
 			</div>
-			<div class="md:w-2/3 px-3 pt-4 pt-lg-0">
+			<div class="md:w-2/3 px-3 pt-4 md:pt-0">
 				<h3 class="text-[26px] font-bold text-[#728394] leading-tight mb-3">
 					UI/UX Designer &amp; Web Developer.
 				</h3>
