@@ -1,31 +1,5 @@
 <script>
-	const socialLinks = [
-		{
-			faIcon: 'fa-brands fa-facebook',
-			name: 'Facebook',
-			href: 'https://facebook.com'
-		},
-		{
-			faIcon: 'fa-brands fa-twitter',
-			name: 'Twitter',
-			href: 'https://twitter.com'
-		},
-		{
-			faIcon: 'fa-brands fa-instagram',
-			name: 'Instagram',
-			href: 'https://instagram.com'
-		},
-		{
-			faIcon: 'fa-brands fa-skype',
-			name: 'Skype',
-			href: 'https://skype.com'
-		},
-		{
-			faIcon: 'fa-brands fa-linkedin',
-			name: 'Linkedin',
-			href: 'https://linkedin.com'
-		}
-	];
+	import { socialLinks } from '$lib/home/social';
 </script>
 
 <footer class="py-[30px] text-center text-[14px] text-[#45505b] bg-[#f7f8f9]">
@@ -35,7 +9,7 @@
 			Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe
 			commodi placeat.
 		</p>
-		<div id="social-links" class="mb-[40px]">
+		<div id="footer-social-links" class="mb-[40px]">
 			{#each socialLinks as link}
 				<a
 					href={link.href}
