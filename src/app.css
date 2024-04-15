@@ -2,19 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
-}
-
-a {
-  color: #0563bb;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #067ded;
-  text-decoration: none;
+  @apply text-base;
 }
 
 h1,
@@ -24,4 +15,13 @@ h4,
 h5,
 h6 {
   font-family: "Roboto", sans-serif;
+}
+
+@layer base {
+  .row {
+    @apply flex flex-wrap mt-[calc(-1*0)] mx-[cal(-.5*1.5rem)];
+  }
+  .row > * {
+    @apply flex-shrink-0 max-w-full px-[calc(1.5rem*.5)] mt-0;
+  }
 }
