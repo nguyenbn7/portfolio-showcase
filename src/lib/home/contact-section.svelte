@@ -45,7 +45,7 @@
 			<Column class="lg:w-2/3 mt-12 lg:mt-0">
 				<form action="#" method="post" class="w-full bg-white">
 					<Row>
-						<Column class="md:w-1/2 pb-[8px] px-0 md:pr-3">
+						<Column class="md:w-1/2 pb-[8px] !px-0 md:!pr-3">
 							<input
 								type="text"
 								name="name"
@@ -55,7 +55,7 @@
 								required
 							/>
 						</Column>
-						<Column class="md:w-1/2 mt-4 md:mt-0 pb-[8px] px-0 md:pl-3">
+						<Column class="md:w-1/2 mt-4 md:mt-0 pb-[8px] !px-0 md:!pl-3">
 							<input
 								type="email"
 								class="block w-full py-[.375rem] px-3 font-normal leading-normal border-[2px] border-[#dee2e6] focus:border-[#86b7fe] outline-none rounded-[4px] h-[44px] text-[14px] text-[#212529] appearance-none"
