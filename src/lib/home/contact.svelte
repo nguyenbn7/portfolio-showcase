@@ -1,10 +1,10 @@
 <script>
-	import Column from '$lib/shared/column.svelte';
-	import Container from '$lib/shared/container.svelte';
-	import Row from '$lib/shared/row.svelte';
-	import SectionHead from '$lib/shared/section-head.svelte';
-	import SectionTitle from '$lib/shared/section-title.svelte';
-	import Section from '$lib/shared/section.svelte';
+	import Column from '$lib/component/column.svelte';
+	import Container from '$lib/component/container.svelte';
+	import Row from '$lib/component/row.svelte';
+	import SectionHead from '$lib/component/section-head.svelte';
+	import SectionTitle from '$lib/component/section-title.svelte';
+	import Section from '$lib/component/section.svelte';
 </script>
 
 <Section id="contact" data-aos="fade-up">

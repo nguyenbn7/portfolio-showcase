@@ -23,6 +23,11 @@
 			sectionId: 'portfolio'
 		},
 		{
+			name: 'Services',
+			faIcon: 'fa-solid fa-server',
+			sectionId: 'services'
+		},
+		{
 			name: 'Contact',
 			faIcon: 'fa-solid fa-envelope',
 			sectionId: 'contact'
