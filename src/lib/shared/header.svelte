@@ -18,9 +18,9 @@
 			sectionId: 'resume'
 		},
 		{
-			name: 'Portfolio',
-			faIcon: 'fa-solid fa-book-open',
-			sectionId: 'portfolio'
+			name: 'Show Case',
+			faIcon: 'fa-solid fa-lightbulb',
+			sectionId: 'show-case'
 		},
 		{
 			name: 'Services',

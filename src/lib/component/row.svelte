@@ -6,6 +6,6 @@
 	let classNames = undefined;
 </script>
 
-<div class={'w-full flex flex-wrap mt-0' + (classNames ? ` ${classNames}` : '')}>
+<div class={'w-full flex flex-wrap mt-0' + (classNames ? ` ${classNames}` : '')} {...$$restProps}>
 	<slot></slot>
 </div>
