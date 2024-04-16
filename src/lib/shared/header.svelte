@@ -1,4 +1,6 @@
 <script>
+	import { onMount } from 'svelte';
+
 	const links = [
 		{
 			name: 'Home',
@@ -26,7 +28,29 @@
 			sectionId: 'contact'
 		}
 	];
+
+	/**
+	 * @type {string | null}
+	 */
+	let currentId;
+
+	const sectionIds = links.map((link) => link.sectionId);
+
+	function activateLinkWhenScrollToSection() {
+		const section = [...document.getElementsByTagName('section')].find(
+			(ele) => ele.getBoundingClientRect().top + 300 > 0
+		);
+		if (!section) return;
+
+		const sectionId = section.getAttribute('id');
+		if (!sectionId || !sectionIds.includes(sectionId)) return;
+		currentId = sectionId;
+	}
+
+	onMount(activateLinkWhenScrollToSection);
 </script>
+
+<svelte:document on:scroll={activateLinkWhenScrollToSection} />
 
 <header
 	class="fixed top-0 left-0 bottom-0 z-[9997] transition-all duration-500 p-[15px] overflow-y-auto flex flex-col justify-center"
@@ -37,7 +61,8 @@
 				<li class="relative">
 					<a
 						href="#{link.sectionId}"
-						class="group/item w-[56px] hover:w-full flex items-center py-[10px] px-[18px] mb-[8px] text-[#45505b] hover:text-white bg-[#f2f3f5] hover:bg-[#0563bb] rounded-[50px] h-[56px] overflow-hidden duration-300"
+						class="group/item w-[56px] hover:w-full flex items-center py-[10px] px-[18px] mb-[8px] text-[#45505b] hover:text-white bg-[#f2f3f5] hover:bg-[#0563bb] rounded-[50px] h-[56px] overflow-hidden duration-300 focus:ring-2 focus:ring-[#86b7fe] outline-none"
+						class:nav-link-active={currentId === link.sectionId}
 						title={link.name}
 						><span class="size-[20px] text-[17px] text-center"><i class={link.faIcon}></i></span>
 						<span class="hidden group-hover/item:block ml-[7px] mr-[5px] text-[15px]"
