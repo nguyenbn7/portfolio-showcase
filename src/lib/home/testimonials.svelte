@@ -1,12 +1,11 @@
 <script>
-	import '$lib/tns.css';
-	import Column from '$lib/component/column.svelte';
+	import 'swiper/css/bundle';
 	import Container from '$lib/component/container.svelte';
-	import Row from '$lib/component/row.svelte';
 	import SectionHead from '$lib/component/section-head.svelte';
 	import SectionTitle from '$lib/component/section-title.svelte';
 	import Section from '$lib/component/section.svelte';
 	import { onMount } from 'svelte';
+	import Swiper from 'swiper/bundle';
 
 	const clients = [
 		{
@@ -41,17 +40,20 @@
 		}
 	];
 
-	onMount(async () => {
-		const { tns } = await import('tiny-slider');
-		tns({
-			container: '.testimonials-slider',
-			speed: 500,
-			items: 1,
+	onMount(() => {
+		new Swiper('.testimonials-slider', {
+			speed: 600,
 			loop: true,
-			autoplay: true,
-			animateDelay: 5000,
-			autoplayButtonOutput: false,
-			controls: false
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false
+			},
+			slidesPerView: 'auto',
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true
+			}
 		});
 	});
 </script>
@@ -61,27 +63,30 @@
 		<SectionHead>
 			<SectionTitle>Testimonials</SectionTitle>
 		</SectionHead>
-		<Row class="flex-nowrap testimonials-slider" data-aos="fade-up" data-aos-delay="100">
-			{#each clients as client, idx}
-				<Column class="text-center">
-					<img
-						src="/testimonials/testimonials-{idx + 1}.jpg"
-						class="w-[120px] rounded-[50%] border-[4px] border-solid border-white mx-auto"
-						alt={client.name}
-					/>
-					<h3 class="text-[20px] font-bold mt-[10px] mb-[5px] text-[#111]">{client.name}</h3>
-					<h4 class="text-[14px] text-[#999] ml-[15px]">{@html client.jobTitle}</h4>
-					<p class="italic mx-auto mb-[15px] lg:w-[80%]">
-						<i
-							class="fa-solid fa-quote-left before:text-[26px] before:text-[#90c8fc] inline-block -left-[5px] relative"
-						></i>
-						{client.comment}
-						<i
-							class="fa-solid fa-quote-right before:text-[26px] before:text-[#90c8fc] inline-block -right-[5px] relative top-[10px]"
-						></i>
-					</p>
-				</Column>
-			{/each}
-		</Row>
+		<div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+			<div class="swiper-wrapper">
+				{#each clients as client, idx}
+					<div class="text-center swiper-slide">
+						<img
+							src="/testimonials/testimonials-{idx + 1}.jpg"
+							class="w-[120px] rounded-[50%] border-[4px] border-solid border-white mx-auto"
+							alt={client.name}
+						/>
+						<h3 class="text-[20px] font-bold mt-[10px] mb-[5px] text-[#111]">{client.name}</h3>
+						<h4 class="text-[14px] text-[#999] ml-[15px]">{@html client.jobTitle}</h4>
+						<p class="italic mx-auto mb-[15px] lg:w-[80%]">
+							<i
+								class="fa-solid fa-quote-left before:text-[26px] before:text-[#90c8fc] inline-block -left-[5px] relative"
+							></i>
+							{client.comment}
+							<i
+								class="fa-solid fa-quote-right before:text-[26px] before:text-[#90c8fc] inline-block -right-[5px] relative top-[10px]"
+							></i>
+						</p>
+					</div>
+				{/each}
+			</div>
+			<div class="swiper-pagination mt-[20px] !relative"></div>
+		</div>
 	</Container>
 </Section>
