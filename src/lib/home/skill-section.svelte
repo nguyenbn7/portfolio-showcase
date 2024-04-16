@@ -1,10 +1,11 @@
 <script>
+	import Column from '$lib/shared/column.svelte';
+	import Container from '$lib/shared/container.svelte';
+	import Row from '$lib/shared/row.svelte';
+	import SectionHead from '$lib/shared/section-head.svelte';
+	import SectionTitle from '$lib/shared/section-title.svelte';
+	import Section from '$lib/shared/section.svelte';
 	import { onMount } from 'svelte';
-
-	/**
-	 * @type {HTMLElement}
-	 */
-	let skillSection;
 
 	const skills = [
 		{
@@ -36,36 +37,41 @@
 	const halfwayThrough = Math.floor(skills.length / 2);
 
 	onMount(async () => {
+		const skillEle = document.getElementById('skills');
+
 		await import('$lib/waypoint');
-		new Waypoint({
-			element: skillSection,
-			offset: '80%',
-			handler: function (direction) {
-				/**
-				 * @type {NodeListOf<HTMLElement>}
-				 */
-				let progress = document.querySelectorAll(".progress [role='progressbar']");
-				progress.forEach((el) => {
-					el.style.width = el.getAttribute('aria-valuenow') + '%';
-				});
-			}
-		});
+
+		if (skillEle) {
+			new Waypoint({
+				element: skillEle,
+				offset: '80%',
+				handler: function (direction) {
+					/**
+					 * @type {NodeListOf<HTMLElement>}
+					 */
+					let progress = document.querySelectorAll(".progress [role='progressbar']");
+					progress.forEach((el) => {
+						el.style.width = el.getAttribute('aria-valuenow') + '%';
+					});
+				}
+			});
+		}
 	});
 </script>
 
-<section id="skills" bind:this={skillSection}>
-	<div class="container px-3 mx-auto" data-aos="fade-up">
-		<div class="section-title">
-			<h2>Skills</h2>
+<Section id="skills">
+	<Container data-aos="fade-up">
+		<SectionHead>
+			<SectionTitle>Skills</SectionTitle>
 			<p>
 				Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
 				Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
 				alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
 			</p>
-		</div>
+		</SectionHead>
 
-		<div class="row">
-			<div class="w-full md:w-1/2 px-3">
+		<Row>
+			<Column class="lg:w-1/2">
 				{#each skills.slice(0, halfwayThrough) as skill}
 					<div class="progress">
 						<span class="skill">{skill.name} <i class="val">{skill.masteryPercentage}%</i></span>
@@ -80,9 +86,8 @@
 						</div>
 					</div>
 				{/each}
-			</div>
-
-			<div class="w-full md:w-1/2 px-3">
+			</Column>
+			<Column class="lg:w-1/2">
 				{#each skills.slice(halfwayThrough) as skill}
 					<div class="progress">
 						<span class="skill">{skill.name} <i class="val">{skill.masteryPercentage}%</i></span>
@@ -97,7 +102,7 @@
 						</div>
 					</div>
 				{/each}
-			</div>
-		</div>
-	</div>
-</section>
+			</Column>
+		</Row>
+	</Container>
+</Section>

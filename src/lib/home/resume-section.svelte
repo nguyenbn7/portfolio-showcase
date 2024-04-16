@@ -1,16 +1,24 @@
-<section id="resume">
-	<div class="container" data-aos="fade-up">
-		<div class="section-title">
-			<h2>Resume</h2>
+<script>
+	import Column from '$lib/shared/column.svelte';
+	import Container from '$lib/shared/container.svelte';
+	import Row from '$lib/shared/row.svelte';
+	import SectionHead from '$lib/shared/section-head.svelte';
+	import SectionTitle from '$lib/shared/section-title.svelte';
+	import Section from '$lib/shared/section.svelte';
+</script>
+
+<Section id="resume">
+	<Container data-aos="fade-up">
+		<SectionHead>
+			<SectionTitle>Resume</SectionTitle>
 			<p>
 				Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
 				Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
 				alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
 			</p>
-		</div>
-
-		<div class="row">
-			<div class="w-full md:w-1/2">
+		</SectionHead>
+		<Row>
+			<Column class="lg:w-1/2">
 				<h3 class="text-[26px] font-bold my-[20px] text-[#45505b]">Sumary</h3>
 				<div
 					class="relative pl-[20px] pb-[20px] -mt-[2px] border-l-2 border-solid border-[#0563bb] before:content-[''] before:absolute before:size-[16px] before:rounded-[50px] before:-left-[9px] before:top-0 before:bg-white before:border-[2px] before:border-solid before:border-[#0563bb]"
@@ -68,8 +76,8 @@
 						consequatur neque etlon sader mart dila
 					</p>
 				</div>
-			</div>
-			<div class="w-full md:w-1/2">
+			</Column>
+			<Column class="lg:w-1/2">
 				<h3 class="text-[26px] font-bold my-[20px] text-[#45505b]">Professional Experience</h3>
 				<div
 					class="relative pl-[20px] pb-[20px] -mt-[2px] border-l-2 border-solid border-[#0563bb] before:content-[''] before:absolute before:size-[16px] before:rounded-[50px] before:-left-[9px] before:top-0 before:bg-white before:border-[2px] before:border-solid before:border-[#0563bb]"
@@ -129,7 +137,7 @@
 						</li>
 					</ul>
 				</div>
-			</div>
-		</div>
-	</div>
-</section>
+			</Column>
+		</Row>
+	</Container>
+</Section>

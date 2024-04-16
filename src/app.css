@@ -14,53 +14,19 @@ h4,
 h5,
 h6 {
 	font-family: 'Roboto', sans-serif;
+	@apply font-bold
 }
 
 @layer base {
-	.row {
-		@apply flex flex-wrap mt-[calc(-1*0)] mx-[cal(-.5*1.5rem)];
-	}
-	.row > * {
-		@apply flex-shrink-0 max-w-full px-[calc(1.5rem*.5)] mt-0;
-	}
-
-	main section {
-		@apply p-[60px] overflow-hidden;
-	}
-
-	main section > div {
-		@apply px-7;
-	}
-
-	.section-title {
-		@apply text-center pb-[30px];
-	}
-
-	.section-title h2 {
-		@apply relative mb-[20px] pb-[20px] text-[32px] font-bold uppercase text-[#45505b];
-	}
-
-	.section-title h2::before {
-		@apply content-[''] absolute block w-[120px] h-[1px] bg-[#ddd] bottom-[1px] left-[calc(50%-60px)];
-	}
-
-	.section-title h2::after {
-		@apply content-[''] absolute block w-[40px] h-[3px] bg-[#0563bb] bottom-0 left-[calc(50%-20px)];
-	}
-
-	.section-title p {
-		@apply mb-0;
-	}
-
 	.progress {
 		@apply h-[60px] block bg-none rounded-none;
 	}
 
-  .progress .skill {
-    @apply py-[10px] m-0 uppercase block font-semibold text-[#45505b];
-  }
+	.progress .skill {
+		@apply py-[10px] m-0 uppercase block font-semibold text-[#45505b];
+	}
 
-  .progress .skill .val {
-    @apply float-right font-normal;
-  }
+	.progress .skill .val {
+		@apply float-right font-normal;
+	}
 }
