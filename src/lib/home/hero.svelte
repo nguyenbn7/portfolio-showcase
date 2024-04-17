@@ -1,6 +1,6 @@
 <script>
+	import { socialLinks } from '$lib/core/social';
 	import { onMount } from 'svelte';
-	import { socialLinks } from './social';
 	import Typed from 'typed.js';
 
 	const jobTitleStr = 'Designer, Developer, Freelancer, Photographer';

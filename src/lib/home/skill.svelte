@@ -5,34 +5,8 @@
 	import SectionHead from '$lib/component/section-head.svelte';
 	import SectionTitle from '$lib/component/section-title.svelte';
 	import Section from '$lib/component/section.svelte';
+	import { skills } from '$lib/core/skill';
 	import { onMount } from 'svelte';
-
-	const skills = [
-		{
-			name: 'HTML',
-			masteryPercentage: 100
-		},
-		{
-			name: 'CSS',
-			masteryPercentage: 90
-		},
-		{
-			name: 'JavaScript',
-			masteryPercentage: 75
-		},
-		{
-			name: 'PHP',
-			masteryPercentage: 80
-		},
-		{
-			name: 'WordPress/CMS',
-			masteryPercentage: 90
-		},
-		{
-			name: 'Photoshop',
-			masteryPercentage: 55
-		}
-	];
 
 	const halfwayThrough = Math.floor(skills.length / 2);
 
