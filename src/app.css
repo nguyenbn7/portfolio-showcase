@@ -2,32 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	font-family: 'Open Sans', sans-serif;
-	@apply text-base;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Roboto', sans-serif;
-	@apply font-bold
-}
-
 @layer base {
-	.progress {
-		@apply h-[60px] block bg-none rounded-none;
+	body {
+		font-family: 'Open Sans', sans-serif;
+		@apply text-base;
 	}
 
-	.progress .skill {
-		@apply py-[10px] m-0 uppercase block font-semibold text-[#45505b];
+	body > * {
+		@apply text-black/80;
 	}
 
-	.progress .skill .val {
-		@apply float-right font-normal;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'Roboto', sans-serif;
+		@apply font-bold text-river-bed-700;
+	}
+
+	@media (prefers-color-scheme:dark) {
+
+		body > * {
+			@apply text-white-smoke/80;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: 'Roboto', sans-serif;
+			@apply font-bold text-white/85;
+		}
 	}
 }
 

@@ -20,14 +20,14 @@
 		<Row>
 			<Column class="lg:w-1/3 md:w-1/2 flex items-stretch" data-aos="zoom-in" data-aos-delay="100">
 				<div
-					class="group text-center pt-[70px] pb-[80px] px-[20px] transition-all duration-300 ease-in-out bg-white shadow-xl iconbox-blue hover:shadow-2xl"
+					class="group text-center pt-[70px] pb-[80px] px-[20px] transition-all duration-300 ease-in-out bg-white dark:bg-dark-grey-300 shadow-xl hover:shadow-2xl dark:hover:shadow-primary-300"
 				>
 					<div
 						class="my-0 mx-auto size-[100px] flex items-center justify-center ease-in-out duration-300 relative"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							class="absolute size-[100] text-[36px] duration-500 fill-[#f5f5f5] group-hover:fill-[#47aeff]"
+							class="absolute size-[100] text-[36px] duration-500 fill-slate-50 dark:fill-dark-grey-100 group-hover:fill-primary-200"
 							viewBox="0 0 600 600"
 						>
 							<path
@@ -35,11 +35,13 @@
 							/>
 						</svg>
 						<i
-							class="fa-brands fa-dribbble text-[#47aeff] before:text-[36px] duration-500 relative group-hover:text-white"
+							class="fa-brands fa-dribbble text-primary-default dark:text-white before:text-[36px] duration-500 relative group-hover:text-white dark:group-hover:text-dark-grey-800"
 						></i>
 					</div>
 					<h4 class="font-semibold mt-[10px] mb-[15px] text-[22px]">
-						<a href={'javascript:;'} class="text-[#45505b] ease-in-out duration-300">Lorem Ipsum</a>
+						<a href={'javascript:;'} class="text-[#45505b] dark:text-white ease-in-out duration-300"
+							>Lorem Ipsum</a
+						>
 					</h4>
 					<p class="leading-[24px] text-[14px] mb-0">
 						Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi

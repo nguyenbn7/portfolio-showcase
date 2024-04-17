@@ -73,11 +73,13 @@
 		<Row>
 			<Column class="lg:w-1/2">
 				{#each skills.slice(0, halfwayThrough) as skill}
-					<div class="progress">
-						<span class="skill">{skill.name} <i class="val">{skill.masteryPercentage}%</i></span>
-						<div class="bg-[#f2f3f5]">
+					<div class="progress h-[60px] block bg-none rounded-none">
+						<span class="py-[10px] m-0 uppercase block font-semibold"
+							>{skill.name} <i class="float-right font-normal">{skill.masteryPercentage}%</i></span
+						>
+						<div class="bg-white-smoke/90 dark:bg-white-smoke/15">
 							<div
-								class="w-[1px] h-[10px] duration-1000 bg-gradient-to-r from-blue-100 to-blue-800 max-w-full"
+								class="w-[1px] h-[10px] duration-1000 bg-gradient-to-r from-primary-100 to-primary-500 dark:from-primary-800/80 dark:to-primary-400 max-w-full"
 								role="progressbar"
 								aria-valuenow={skill.masteryPercentage}
 								aria-valuemin="0"
@@ -89,11 +91,13 @@
 			</Column>
 			<Column class="lg:w-1/2">
 				{#each skills.slice(halfwayThrough) as skill}
-					<div class="progress">
-						<span class="skill">{skill.name} <i class="val">{skill.masteryPercentage}%</i></span>
-						<div class="bg-[#f2f3f5]">
+					<div class="progress h-[60px] block bg-none rounded-none">
+						<span class="py-[10px] m-0 uppercase block font-semibold"
+							>{skill.name} <i class="float-right font-normal">{skill.masteryPercentage}%</i></span
+						>
+						<div class="bg-white-smoke/90 dark:bg-white-smoke/15">
 							<div
-								class="w-[1px] h-[10px] duration-1000 bg-gradient-to-r from-blue-100 to-blue-800 max-w-full"
+								class="w-[1px] h-[10px] duration-1000 bg-gradient-to-r from-primary-100 to-primary-500 dark:from-primary-800/80 dark:to-primary-400 max-w-full"
 								role="progressbar"
 								aria-valuenow={skill.masteryPercentage}
 								aria-valuemin="0"

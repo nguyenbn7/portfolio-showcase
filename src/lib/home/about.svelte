@@ -22,8 +22,8 @@
 			<Column class="lg:w-1/3">
 				<img src="/profile-img.jpg" class="max-w-full h-auto" alt="profile" />
 			</Column>
-			<Column class="lg:w-2/3 pt-4">
-				<h3 class="text-[26px] font-bold text-[#728394] leading-tight mb-3">
+			<Column class="lg:w-2/3 pt-4 lg:pt-0">
+				<h3 class="text-[26px] font-bold leading-tight mb-3">
 					UI/UX Designer &amp; Web Developer.
 				</h3>
 				<p class="italic mb-5">
@@ -35,27 +35,27 @@
 						<ul>
 							<li class="flex items-center mb-[20px]">
 								<i
-									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-[#0563bb]"
+									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-primary-default dark:before:text-primary-400"
 								></i>
 								<strong class="mr-[10px]">Birthday:</strong>
 								<span>1 May 1995</span>
 							</li>
 							<li class="flex items-center mb-[20px]">
 								<i
-									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-[#0563bb]"
+									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-primary-default dark:before:text-primary-400"
 								></i>
 								<strong class="mr-[10px]">Website:</strong>
 								<span>www.example.com</span>
 							</li>
 							<li class="flex items-center mb-[20px]">
 								<i
-									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-[#0563bb]"
+									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-primary-default dark:before:text-primary-400"
 								></i> <strong class="mr-[10px]">Phone:</strong>
 								<span>+123 456 7890</span>
 							</li>
 							<li class="flex items-center mb-[20px]">
 								<i
-									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-[#0563bb]"
+									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-primary-default dark:before:text-primary-400"
 								></i> <strong class="mr-[10px]">City:</strong>
 								<span>New York, USA</span>
 							</li>
@@ -65,26 +65,26 @@
 						<ul>
 							<li class="flex items-center mb-[20px]">
 								<i
-									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-[#0563bb]"
+									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-primary-default dark:before:text-primary-400"
 								></i> <strong class="mr-[10px]">Age:</strong>
 								<span>30</span>
 							</li>
 							<li class="flex items-center mb-[20px]">
 								<i
-									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-[#0563bb]"
+									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-primary-default dark:before:text-primary-400"
 								></i> <strong class="mr-[10px]">Degree:</strong>
 								<span>Master</span>
 							</li>
 							<li class="flex items-center mb-[20px]">
 								<i
-									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-[#0563bb]"
+									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-primary-default dark:before:text-primary-400"
 								></i>
 								<strong class="mr-[10px]">PhEmailone:</strong>
 								<span>email@example.com</span>
 							</li>
 							<li class="flex items-center mb-[20px]">
 								<i
-									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-[#0563bb]"
+									class="fa-solid fa-chevron-right before:text-[16px] mr-[5px] leading-[0] before:text-primary-default dark:before:text-primary-400"
 								></i>
 								<strong class="mr-[10px]">Freelance:</strong>
 								<span>Available</span>
