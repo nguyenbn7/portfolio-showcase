@@ -68,9 +68,9 @@
 						href="#{link.sectionId}"
 						class="group/item w-[56px] hover:w-full flex items-center py-[10px] px-[18px] mb-[8px] text-river-bed-700 dark:text-white-smoke hover:text-white dark:hover:text-white/85 bg-white-smoke dark:bg-dark-grey-500 hover:bg-primary-original dark:hover:bg-primary-400 rounded-[50px] h-[56px] overflow-hidden duration-300 focus:ring-2 focus:ring-primary-original dark:focus:ring-primary-200 outline-none"
 						class:nav-link-active={currentId === link.sectionId}
-						title={link.name}
 						><span class="size-[20px] text-[17px] text-center"><i class={link.faIcon}></i></span>
-						<span class="hidden group-hover/item:block ml-[7px] mr-[5px] text-[15px]"
+						<span
+							class="hidden group-hover/item:block ml-[7px] mr-[5px] text-[15px] whitespace-nowrap"
 							>{link.name}</span
 						></a
 					>

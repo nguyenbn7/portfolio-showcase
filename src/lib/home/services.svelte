@@ -60,7 +60,7 @@
 					data-aos-delay={100 + idx * 1}
 				>
 					<div
-						class="group text-center pt-[70px] pb-[80px] px-[20px] transition-all duration-300 ease-in-out bg-white dark:bg-dark-grey-900 shadow-lg shadow-dark-grey-400 dark:shadow-white-smoke/40 hover:ring-2 hover:ring-primary-300"
+						class="group text-center pt-[70px] pb-[80px] px-[20px] transition-all duration-300 ease-in-out bg-white dark:bg-dark-grey-900 shadow-lg shadow-dark-grey-400 dark:shadow-white-smoke/40 hover:ring-2 hover:dark:ring-primary-300 hover:ring-primary-original"
 					>
 						<div
 							class="inline-block size-[72px] bg-primary-400 text-white mx-auto mb-[20px] pt-[17px] text-center rounded-[50%] text-[36px]"
@@ -68,9 +68,7 @@
 							<i class={service.faIcon}></i>
 						</div>
 						<h4 class="font-semibold mt-[10px] mb-[15px] text-[22px]">
-							<a
-								href={'javascript:;'}
-								class="ease-in-out duration-300 group-hover:text-primary-300 group-hover:dark:text-primary-original"
+							<a href={'javascript:;'} class="ease-in-out duration-300 group-hover:text-primary-300"
 								>{service.name}</a
 							>
 						</h4>

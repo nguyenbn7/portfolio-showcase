@@ -1,11 +1,14 @@
 <script>
-	import 'swiper/css/bundle';
+	import 'swiper/css';
+	import 'swiper/css/pagination';
 	import Container from '$lib/component/container.svelte';
 	import SectionHead from '$lib/component/section-head.svelte';
 	import SectionTitle from '$lib/component/section-title.svelte';
 	import Section from '$lib/component/section.svelte';
 	import { onMount } from 'svelte';
-	import Swiper from 'swiper/bundle';
+	import Swiper from 'swiper';
+	import { Pagination } from 'swiper/modules';
+	import { Autoplay } from 'swiper/modules';
 
 	const clients = [
 		{
@@ -42,7 +45,8 @@
 
 	onMount(() => {
 		new Swiper('.testimonials-slider', {
-			speed: 600,
+			modules: [Pagination, Autoplay],
+			speed: 1000,
 			loop: true,
 			autoplay: {
 				delay: 5000,
@@ -66,27 +70,35 @@
 		<div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
 			<div class="swiper-wrapper">
 				{#each clients as client, idx}
-					<div class="text-center swiper-slide">
+					<div class="swiper-slide">
 						<img
 							src="/testimonials/testimonials-{idx + 1}.jpg"
 							class="w-[120px] rounded-[50%] border-[4px] border-solid border-white mx-auto"
 							alt={client.name}
 						/>
-						<h3 class="text-[20px] font-bold mt-[10px] mb-[5px] text-[#111]">{client.name}</h3>
-						<h4 class="text-[14px] text-[#999] ml-[15px]">{@html client.jobTitle}</h4>
-						<p class="italic mx-auto mb-[15px] lg:w-[80%]">
+						<h3
+							class="text-[20px] font-bold mt-[10px] mb-[5px] text-[#111] dark:text-white/85 text-center"
+						>
+							{client.name}
+						</h3>
+						<h4 class="text-[14px] text-dark-grey-400 dark:text-white-smoke/65 text-center">
+							{@html client.jobTitle}
+						</h4>
+						<p class="italic mx-auto mb-[15px] lg:w-[80%] text-center">
 							<i
-								class="fa-solid fa-quote-left before:text-[26px] before:text-[#90c8fc] inline-block -left-[5px] relative"
+								class="fa-solid fa-quote-left before:text-[26px] before:text-primary-200 inline-block -left-[5px] relative"
 							></i>
 							{client.comment}
 							<i
-								class="fa-solid fa-quote-right before:text-[26px] before:text-[#90c8fc] inline-block -right-[5px] relative top-[10px]"
+								class="fa-solid fa-quote-right before:text-[26px] before:text-primary-200 inline-block -right-[5px] relative top-[10px]"
 							></i>
 						</p>
 					</div>
 				{/each}
 			</div>
-			<div class="swiper-pagination mt-[20px] !relative"></div>
+			<div
+				class="swiper-pagination mt-[20px] !relative bullet:size-[12px] bullet:bg-white bullet:opacity-100 bullet:border-[1px] bullet:border-solid bullet:border-primary-original bullet-active:bg-primary-original bullet:dark:bg-white-smoke/35 bullet-active:dark:bg-primary-400"
+			></div>
 		</div>
 	</Container>
 </Section>

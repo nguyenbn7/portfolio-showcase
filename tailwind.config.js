@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors');
+import plugin from 'tailwindcss/plugin';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -100,5 +100,10 @@ export default {
 			}
 		}
 	},
-	plugins: []
+	plugins: [
+		plugin(function ({ addVariant }) {
+			addVariant('bullet', '& .swiper-pagination-bullet')
+			addVariant('bullet-active', '& .swiper-pagination-bullet-active')
+		})
+	]
 };
