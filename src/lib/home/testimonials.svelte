@@ -76,12 +76,10 @@
 							class="w-[120px] rounded-[50%] border-[4px] border-solid border-white mx-auto"
 							alt={client.name}
 						/>
-						<h3
-							class="text-[20px] font-bold mt-[10px] mb-[5px] text-[#111] dark:text-white/85 text-center"
-						>
+						<h3 class="text-[20px] mt-[10px] mb-[5px] text-[#111] text-center">
 							{client.name}
 						</h3>
-						<h4 class="text-[14px] text-dark-grey-400 dark:text-white-smoke/65 text-center">
+						<h4 class="text-[14px] text-dark-grey-400 dark:!text-white-smoke/45 text-center">
 							{@html client.jobTitle}
 						</h4>
 						<p class="italic mx-auto mb-[15px] lg:w-[80%] text-center">

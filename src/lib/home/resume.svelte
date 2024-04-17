@@ -22,7 +22,7 @@
 		</SectionHead>
 		<Row>
 			<Column class="lg:w-1/2">
-				<h3 class="text-[26px] font-bold my-[20px]">Sumary</h3>
+				<h3 class="text-[26px] my-[20px]">Sumary</h3>
 				<ResumeInfoContainer>
 					<ResumeInfoHeader>Brandon Johnson</ResumeInfoHeader>
 					<p>
@@ -39,7 +39,7 @@
 					</ul>
 				</ResumeInfoContainer>
 
-				<h3 class="text-[26px] font-bold my-[20px]">Education</h3>
+				<h3 class="text-[26px] my-[20px]">Education</h3>
 				<ResumeInfoContainer>
 					<ResumeInfoHeader>Master of Fine Arts &amp; Graphic Design</ResumeInfoHeader>
 					<ResumeInfoSubHeader>2015 - 2016</ResumeInfoSubHeader>
@@ -62,7 +62,7 @@
 				</ResumeInfoContainer>
 			</Column>
 			<Column class="lg:w-1/2">
-				<h3 class="text-[26px] font-bold my-[20px]">Professional Experience</h3>
+				<h3 class="text-[26px] my-[20px]">Professional Experience</h3>
 				<ResumeInfoContainer>
 					<ResumeInfoHeader>Senior graphic design specialist</ResumeInfoHeader>
 					<ResumeInfoSubHeader>2019 - Present</ResumeInfoSubHeader>

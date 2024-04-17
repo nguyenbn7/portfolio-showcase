@@ -23,10 +23,8 @@
 				<img src="/profile-img.jpg" class="max-w-full h-auto" alt="profile" />
 			</Column>
 			<Column class="lg:w-2/3 pt-4 lg:pt-0">
-				<h3 class="text-[26px] font-bold leading-tight mb-3">
-					UI/UX Designer &amp; Web Developer.
-				</h3>
-				<p class="italic mb-5">
+				<h3 class="text-[26px] leading-tight mb-3">UI/UX Designer &amp; Web Developer.</h3>
+				<p class="italic mb-5 dark:!text-white-smoke/80">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 					ut labore et dolore magna aliqua.
 				</p>

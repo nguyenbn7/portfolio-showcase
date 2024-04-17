@@ -58,7 +58,7 @@
 <svelte:document on:scroll={activateLinkWhenScrollToSection} />
 
 <header
-	class="fixed top-0 left-0 bottom-0 z-[9997] transition-all duration-500 p-[15px] overflow-y-auto flex flex-col justify-center"
+	class="fixed top-0 left-0 bottom-0 z-[9997] transition-all duration-500 p-[15px] overflow-y-auto overflow-x-hidden flex flex-col justify-center"
 >
 	<nav class="relative block p-0">
 		<ul class="m-0 p-0 list-none">
@@ -66,7 +66,7 @@
 				<li class="relative">
 					<a
 						href="#{link.sectionId}"
-						class="group/item w-[56px] hover:w-full flex items-center py-[10px] px-[18px] mb-[8px] text-river-bed-700 dark:text-white-smoke hover:text-white dark:hover:text-white/85 bg-white-smoke dark:bg-dark-grey-500 hover:bg-primary-original dark:hover:bg-primary-400 rounded-[50px] h-[56px] overflow-hidden duration-300 focus:ring-2 focus:ring-primary-original dark:focus:ring-primary-200 outline-none"
+						class="group/item size-[56px] hover:w-full flex items-center py-[10px] px-[18px] mb-[8px] text-river-bed-700 dark:!text-white-smoke hover:text-white dark:hover:text-white/85 bg-white-smoke dark:bg-dark-grey-500 hover:bg-primary-original dark:hover:bg-primary-400 rounded-[50px] overflow-hidden duration-300 focus:ring-2 focus:ring-primary-original dark:focus:ring-primary-200 outline-none"
 						class:nav-link-active={currentId === link.sectionId}
 						><span class="size-[20px] text-[17px] text-center"><i class={link.faIcon}></i></span>
 						<span

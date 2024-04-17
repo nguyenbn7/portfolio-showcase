@@ -88,7 +88,7 @@
 					<div class="text-center mt-4">
 						<button
 							type="submit"
-							class="bg-primary-original py-[10px] px-[35px] text-white duration-[400ms] rounded-[50px] hover:bg-primary-800"
+							class="bg-primary-original py-[10px] px-[35px] text-white duration-[400ms] rounded-[50px] hover:bg-primary-800 dark:bg-primary-400 hover:dark:bg-primary-600"
 							>Send Message</button
 						>
 					</div>

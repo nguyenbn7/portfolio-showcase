@@ -22,20 +22,18 @@
 		@apply font-bold text-river-bed-700;
 	}
 
-	@media (prefers-color-scheme: dark) {
-		body > * {
-			@apply text-white-smoke/80;
-		}
+	html.dark body > * {
+		@apply text-white-smoke/80;
+	}
 
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			font-family: 'Roboto', sans-serif;
-			@apply font-bold text-white/85;
-		}
+	html.dark body h1,
+	html.dark body h2,
+	html.dark body h3,
+	html.dark body h4,
+	html.dark body h5,
+	html.dark body h6 {
+		font-family: 'Roboto', sans-serif;
+		@apply font-bold text-white/85;
 	}
 }
 

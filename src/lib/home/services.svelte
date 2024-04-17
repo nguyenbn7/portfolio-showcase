@@ -60,7 +60,7 @@
 					data-aos-delay={100 + idx * 1}
 				>
 					<div
-						class="group text-center pt-[70px] pb-[80px] px-[20px] transition-all duration-300 ease-in-out bg-white dark:bg-dark-grey-900 shadow-lg shadow-dark-grey-400 dark:shadow-white-smoke/40 hover:ring-2 hover:dark:ring-primary-300 hover:ring-primary-original"
+						class="group text-center pt-[70px] pb-[80px] px-[20px] transition-all duration-300 ease-in-out bg-white dark:bg-dark-grey-900 shadow-md shadow-dark-grey-400 dark:shadow-white-smoke/40 hover:ring-2 hover:dark:ring-primary-300 hover:ring-primary-original"
 					>
 						<div
 							class="inline-block size-[72px] bg-primary-400 text-white mx-auto mb-[20px] pt-[17px] text-center rounded-[50%] text-[36px]"
