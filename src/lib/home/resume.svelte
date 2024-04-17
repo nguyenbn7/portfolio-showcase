@@ -1,6 +1,9 @@
 <script>
 	import Column from '$lib/component/column.svelte';
 	import Container from '$lib/component/container.svelte';
+	import ResumeInfoContainer from '$lib/component/resume-info-container.svelte';
+	import ResumeInfoHeader from '$lib/component/resume-info-header.svelte';
+	import ResumeInfoSubHeader from '$lib/component/resume-info-sub-header.svelte';
 	import Row from '$lib/component/row.svelte';
 	import SectionHead from '$lib/component/section-head.svelte';
 	import SectionTitle from '$lib/component/section-title.svelte';
@@ -19,13 +22,9 @@
 		</SectionHead>
 		<Row>
 			<Column class="lg:w-1/2">
-				<h3 class="text-[26px] font-bold my-[20px] text-[#45505b]">Sumary</h3>
-				<div
-					class="relative pl-[20px] pb-[20px] -mt-[2px] border-l-2 border-solid border-[#0563bb] before:content-[''] before:absolute before:size-[16px] before:rounded-[50px] before:-left-[9px] before:top-0 before:bg-white before:border-[2px] before:border-solid before:border-[#0563bb]"
-				>
-					<h4 class="mb-[10px] text-[18px] leading-[18px] font-semibold uppercase text-[#0563bb]">
-						Brandon Johnson
-					</h4>
+				<h3 class="text-[26px] font-bold my-[20px]">Sumary</h3>
+				<ResumeInfoContainer>
+					<ResumeInfoHeader>Brandon Johnson</ResumeInfoHeader>
 					<p>
 						<em
 							>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing
@@ -38,59 +37,36 @@
 						<li class="pb-[10px] last:pb-0">(123) 456-7891</li>
 						<li class="pb-[10px] last:pb-0">alice.barkley@example.com</li>
 					</ul>
-				</div>
+				</ResumeInfoContainer>
 
-				<h3 class="text-[26px] font-bold my-[20px] text-[#45505b]">Education</h3>
-				<div
-					class="relative pl-[20px] pb-[20px] -mt-[2px] border-l-2 border-solid border-[#0563bb] before:content-[''] before:absolute before:size-[16px] before:rounded-[50px] before:-left-[9px] before:top-0 before:bg-white before:border-[2px] before:border-solid before:border-[#0563bb]"
-				>
-					<h4 class="mb-[10px] text-[18px] leading-[18px] font-semibold uppercase text-[#0563bb]">
-						Master of Fine Arts &amp; Graphic Design
-					</h4>
-					<h5
-						class="text-[16px] py-[5px] px-[15px] inline-block font-semibold mb-[10px] bg-[#f7f8f9]"
-					>
-						2015 - 2016
-					</h5>
-					<p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+				<h3 class="text-[26px] font-bold my-[20px]">Education</h3>
+				<ResumeInfoContainer>
+					<ResumeInfoHeader>Master of Fine Arts &amp; Graphic Design</ResumeInfoHeader>
+					<ResumeInfoSubHeader>2015 - 2016</ResumeInfoSubHeader>
+					<p class="italic">Rochester Institute of Technology, Rochester, NY</p>
 					<p>
 						Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero
 						voluptatum qui ut dignissimos deleniti nerada porti sand markend
 					</p>
-				</div>
-				<div
-					class="relative pl-[20px] pb-[20px] -mt-[2px] border-l-2 border-solid border-[#0563bb] before:content-[''] before:absolute before:size-[16px] before:rounded-[50px] before:-left-[9px] before:top-0 before:bg-white before:border-[2px] before:border-solid before:border-[#0563bb]"
-				>
-					<h4 class="mb-[10px] text-[18px] leading-[18px] font-semibold uppercase text-[#0563bb]">
-						Bachelor of Fine Arts &amp; Graphic Design
-					</h4>
-					<h5
-						class="text-[16px] py-[5px] px-[15px] inline-block font-semibold mb-[10px] bg-[#f7f8f9]"
-					>
-						2010 - 2014
-					</h5>
-					<p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+				</ResumeInfoContainer>
+
+				<ResumeInfoContainer>
+					<ResumeInfoHeader>Bachelor of Fine Arts &amp; Graphic Design</ResumeInfoHeader>
+					<ResumeInfoSubHeader>2010 - 2014</ResumeInfoSubHeader>
+					<p class="italic">Rochester Institute of Technology, Rochester, NY</p>
 					<p>
 						Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius
 						vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae
 						consequatur neque etlon sader mart dila
 					</p>
-				</div>
+				</ResumeInfoContainer>
 			</Column>
 			<Column class="lg:w-1/2">
-				<h3 class="text-[26px] font-bold my-[20px] text-[#45505b]">Professional Experience</h3>
-				<div
-					class="relative pl-[20px] pb-[20px] -mt-[2px] border-l-2 border-solid border-[#0563bb] before:content-[''] before:absolute before:size-[16px] before:rounded-[50px] before:-left-[9px] before:top-0 before:bg-white before:border-[2px] before:border-solid before:border-[#0563bb]"
-				>
-					<h4 class="mb-[10px] text-[18px] leading-[18px] font-semibold uppercase text-[#0563bb]">
-						Senior graphic design specialist
-					</h4>
-					<h5
-						class="text-[16px] py-[5px] px-[15px] inline-block font-semibold mb-[10px] bg-[#f7f8f9]"
-					>
-						2019 - Present
-					</h5>
-					<p><em>Experion, New York, NY </em></p>
+				<h3 class="text-[26px] font-bold my-[20px]">Professional Experience</h3>
+				<ResumeInfoContainer>
+					<ResumeInfoHeader>Senior graphic design specialist</ResumeInfoHeader>
+					<ResumeInfoSubHeader>2019 - Present</ResumeInfoSubHeader>
+					<p class="italic">Experion, New York, NY</p>
 					<ul class="pl-[20px] list-disc">
 						<li class="pb-[10px] last:pb-0">
 							Lead in the design, development, and implementation of the graphic, layout, and
@@ -108,19 +84,12 @@
 							Oversee the efficient use of production project budgets ranging from $2,000 - $25,000
 						</li>
 					</ul>
-				</div>
-				<div
-					class="relative pl-[20px] pb-[20px] -mt-[2px] border-l-2 border-solid border-[#0563bb] before:content-[''] before:absolute before:size-[16px] before:rounded-[50px] before:-left-[9px] before:top-0 before:bg-white before:border-[2px] before:border-solid before:border-[#0563bb]"
-				>
-					<h4 class="mb-[10px] text-[18px] leading-[18px] font-semibold uppercase text-[#0563bb]">
-						Graphic design specialist
-					</h4>
-					<h5
-						class="text-[16px] py-[5px] px-[15px] inline-block font-semibold mb-[10px] bg-[#f7f8f9]"
-					>
-						2017 - 2018
-					</h5>
-					<p><em>Stepping Stone Advertising, New York, NY</em></p>
+				</ResumeInfoContainer>
+
+				<ResumeInfoContainer>
+					<ResumeInfoHeader>Graphic design specialist</ResumeInfoHeader>
+					<ResumeInfoSubHeader>2017 - 2018</ResumeInfoSubHeader>
+					<p class="italic">Stepping Stone Advertising, New York, NY</p>
 					<ul class="pl-[20px] list-disc">
 						<li class="pb-[10px] last:pb-0">
 							Developed numerous marketing programs (logos, brochures,infographics, presentations,
@@ -136,7 +105,7 @@
 							Created 4+ design presentations and proposals a month for clients and account managers
 						</li>
 					</ul>
-				</div>
+				</ResumeInfoContainer>
 			</Column>
 		</Row>
 	</Container>

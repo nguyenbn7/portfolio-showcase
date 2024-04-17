@@ -1,4 +1,4 @@
-const colors = require("tailwindcss/colors");
+const colors = require('tailwindcss/colors');
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -83,20 +83,20 @@ export default {
 					 */
 					'disabled-bg': '#E7E7E7'
 				},
-				"river-bed": {
-					50: "#F4F6F7",
-					100: "#E3E8EA",
-					200: "#C9D2D8",
-					300: "#A4B2BC",
-					400: "#778B99",
-					500: "#5C6F7E",
-					600: "#4F5E6B",
-					700: "#45505B",
-					800: "#3D444D",
-					900: "#363B43",
-					950: "#21252B",
+				'river-bed': {
+					50: '#F4F6F7',
+					100: '#E3E8EA',
+					200: '#C9D2D8',
+					300: '#A4B2BC',
+					400: '#778B99',
+					500: '#5C6F7E',
+					600: '#4F5E6B',
+					700: '#45505B',
+					800: '#3D444D',
+					900: '#363B43',
+					950: '#21252B'
 				},
-				"white-smoke": "#F5F5F5",
+				'white-smoke': '#F5F5F5'
 			}
 		}
 	},

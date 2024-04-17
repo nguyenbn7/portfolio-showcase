@@ -22,8 +22,7 @@
 		@apply font-bold text-river-bed-700;
 	}
 
-	@media (prefers-color-scheme:dark) {
-
+	@media (prefers-color-scheme: dark) {
 		body > * {
 			@apply text-white-smoke/80;
 		}
@@ -42,6 +41,6 @@
 
 @layer components {
 	.nav-link-active {
-		@apply !text-white !bg-[#0563bb];
+		@apply !text-white !bg-primary-original dark:!text-white-smoke dark:!bg-primary-400;
 	}
 }
