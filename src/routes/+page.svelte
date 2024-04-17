@@ -18,7 +18,7 @@
 	<About />
 	<Skill />
 	<Resume />
-	<!-- <ShowCase /> -->
+	<ShowCase />
 	<Services />
 	<Testimonials />
 	<Contact />
